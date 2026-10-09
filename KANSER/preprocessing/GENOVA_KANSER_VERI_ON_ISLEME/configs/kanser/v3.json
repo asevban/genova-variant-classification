@@ -1,0 +1,12 @@
+{
+  "version": "V3",
+  "policy": "robust85",
+  "description": "Compact + training fold'unda semantik eksikliği >=%85 sütunları çıkarır.",
+  "source_file": "data/raw/YARISMA_TRAIN_KANSER.csv",
+  "target_file": "data/processed/kanser/00_KANSER_TARGET_AND_METADATA.csv",
+  "output_file": "data/processed/kanser/03_KANSER_ROBUST_COVERAGE85.csv",
+  "n_rows": 388,
+  "n_features": 262,
+  "fit_inside_cv": true,
+  "reference_file_caveat": "Statik CSV bütün etiketli eğitim verisinde tanımlanmış referanstır; resmî CV için aynı policy her training fold'unda yeniden fit edilir."
+}

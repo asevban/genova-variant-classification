@@ -1,0 +1,10 @@
+{
+  "panel": "KANSER",
+  "python_version": "3.11.3",
+  "entrypoint": "final/predict.py",
+  "model": "final/models/KANSER_FINAL_BENIGN_SHIFT_MODEL.joblib",
+  "test_dir": "test",
+  "output_dir": "output",
+  "label_column": "prediction",
+  "probability_column": "pathogenic_score"
+}

@@ -1,0 +1,12 @@
+{
+  "version": "A2",
+  "policy": "missingness_only",
+  "description": "Robust85 tabanına yalnızca satır-temelli missingness özetleri eklenir.",
+  "source_file": "data/raw/YARISMA_TRAIN_KANSER.csv",
+  "target_file": "data/processed/kanser/00_KANSER_TARGET_AND_METADATA.csv",
+  "output_file": "data/processed/kanser/A2_KANSER_MISSINGNESS_FEATURES_ONLY.csv",
+  "n_rows": 388,
+  "n_features": 276,
+  "fit_inside_cv": true,
+  "reference_file_caveat": "Statik CSV bütün etiketli eğitim verisinde tanımlanmış referanstır; resmî CV için aynı policy her training fold'unda yeniden fit edilir."
+}

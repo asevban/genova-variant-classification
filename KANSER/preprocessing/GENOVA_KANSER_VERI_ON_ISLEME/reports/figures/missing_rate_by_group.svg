@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="241" viewBox="0 0 960 241">
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<text x="24" y="36" font-family="Arial" font-size="22" font-weight="700" fill="#17365D">Grup bazında anlamsal eksiklik</text>
+<text x="248" y="90" text-anchor="end" font-family="Arial" font-size="14" fill="#263238">AL</text>
+<rect x="260" y="74" width="600.0" height="22" rx="3" fill="#D97706"/>
+<text x="868.0" y="90" font-family="Arial" font-size="13" fill="#263238">%59.5</text>
+<text x="248" y="124" text-anchor="end" font-family="Arial" font-size="14" fill="#263238">CAT</text>
+<rect x="260" y="108" width="413.8" height="22" rx="3" fill="#D97706"/>
+<text x="681.8" y="124" font-family="Arial" font-size="13" fill="#263238">%41.0</text>
+<text x="248" y="158" text-anchor="end" font-family="Arial" font-size="14" fill="#263238">EK</text>
+<rect x="260" y="142" width="91.0" height="22" rx="3" fill="#D97706"/>
+<text x="359.0" y="158" font-family="Arial" font-size="13" fill="#263238">%9.0</text>
+<text x="248" y="192" text-anchor="end" font-family="Arial" font-size="14" fill="#263238">AA</text>
+<rect x="260" y="176" width="57.2" height="22" rx="3" fill="#D97706"/>
+<text x="325.2" y="192" font-family="Arial" font-size="13" fill="#263238">%5.7</text>
+</svg>

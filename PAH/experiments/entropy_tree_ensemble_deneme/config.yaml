@@ -1,0 +1,45 @@
+# Bagimsiz entropy-tree ensemble deneyi -- sabit parametreler.
+# Bu dosya yalnizca dokumantasyon/referans amaclidir; scripts/*.py bu
+# degerleri kendi icinde sabit olarak tasir (config-dosyasindan okumaz) --
+# tek-seferlik, izole bir deney oldugu icin ek bir config-yukleme katmani
+# eklenmedi (YAGNI, bkz. CLAUDE.md kod stili).
+
+experiment_name: entropy_tree_ensemble_deneme
+status: bagimsiz_arastirma_denemesi_resmi_pipeline_degismedi
+
+split_bank:
+  path: data/splits/pah/
+  n_outer_repeats: 10
+  n_outer_splits: 5
+  n_inner_splits: 4
+  source: OLDUGU GIBI OKUNUR, yeniden uretilmez
+
+tree_params:
+  criterion: entropy
+  max_depth: 4
+  min_samples_split: 12
+  min_samples_leaf: 3
+  class_weight: balanced
+
+ensemble:
+  n_trees: 21
+  voting: hard
+  bootstrap: dengeli (sinif basina ayri, yerine-koyarak, orijinal sinif buyuklugu kadar)
+
+threshold_search:
+  grid: [11, 12, 13, 14, 15, 16, 17, 18, 19]  # / 21 oy
+  scope: yalnizca ic (inner) fold'lar -- dis test fold'u hicbir sekilde kullanilmaz
+  selection_metric: F1 (patojenik=1), 4 ic fold ortalamasi
+
+models:
+  A: {features: pool_25, structure: tek_agac, threshold_search: yok}
+  B: {features: pool_25, structure: ensemble_21, threshold_search: var}
+  C: {features: tum_aday_evren_405, features_per_tree: 70, structure: ensemble_21, threshold_search: var}
+  D: {features: pool_25_CAT_1_cikarilmis_24, structure: ensemble_21, threshold_search: var, not: "yalnizca Model B'nin ablasyonu"}
+
+seed_formula: "SEED + repeat_idx*100 + fold_idx"  # 03c_ID3_YONTEM_EKLEME_PAH.md ile tutarli
+base_seed: 42
+
+target_prevalence_final_test: 0.286  # final yarisma beklenen patojenik orani
+
+feature_pool_source: reports/tables/v4_final_feature_pool.json  # PRECHECK'te taze okunur, deney sirasinda YAZILMAZ

@@ -1,0 +1,10 @@
+{
+  "panel": "CFTR",
+  "python_version": "3.12.10",
+  "entrypoint": "final/predict.py",
+  "model": "final/models/artifacts",
+  "test_dir": "test",
+  "output_dir": "output",
+  "label_column": "Label",
+  "probability_column": null
+}

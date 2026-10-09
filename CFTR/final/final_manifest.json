@@ -1,0 +1,28 @@
+{
+  "package": "CFTR_319_FINAL",
+  "feature_count": 319,
+  "training_source": "YARISMA_TRAIN_CFTR_REDUCED.csv",
+  "training_rows": 111,
+  "class_counts": {"benign_0": 21, "pathogenic_1": 90},
+  "removed_columns": ["CAT_6", "AL_6", "AL_251", "AL_1", "AL_211"],
+  "combined_columns": {
+    "GRUP_AL6_AL251": ["AL_6", "AL_251"],
+    "GRUP_AL1_AL211": ["AL_1", "AL_211"]
+  },
+  "combination_method": "Training-set median/IQR robust standardization followed by available-value mean",
+  "main_model": {
+    "components": ["ID3", "CatBoost", "RandomForest"],
+    "voting": "equal soft voting",
+    "repeat_models": 5,
+    "threshold": 0.7224,
+    "nested_cv": {"projected_f1": 0.6798, "mcc": 0.5225, "specificity": 0.9143, "recall": 0.7356, "fp_per_100_benign": 8.57},
+    "cross_fitted_repeat_average": {"projected_f1": 0.7580, "mcc": 0.5717, "fp_per_100_benign": 4.76}
+  },
+  "backup_model": {"component": "ID3", "repeat_models": 5, "threshold": 0.780952380952381},
+  "id3": {"trees": 21, "max_depth": 4, "min_split": 12, "min_leaf": 3, "random_features_per_tree": 70, "balanced_bootstrap": true},
+  "catboost": {"iterations": 40, "depth": 4, "learning_rate": 0.05, "l2_leaf_reg": 5, "auto_class_weights": "Balanced"},
+  "random_forest": {"n_estimators": 150, "max_depth": 5, "min_samples_leaf": 3, "max_features": 0.3, "class_weight": "balanced_subsample", "selection_note": "depth5_mf03 was the modal nested-CV choice (8/25)"},
+  "seeds": {"catboost_randomforest": [41001, 41002, 41003, 41004, 41005], "id3": [51001, 51002, 51003, 51004, 51005]},
+  "label_mapping": {"0": "benign", "1": "pathogenic"},
+  "frozen": true
+}

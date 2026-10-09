@@ -1,0 +1,10 @@
+{
+  "panel": "MASTER",
+  "python_version": "3.11.3",
+  "entrypoint": "final/predict.py",
+  "model": "final/models/MASTER_Hybrid-E_bestMCC_nested_development_train_frozen.joblib",
+  "test_dir": "test",
+  "output_dir": "output",
+  "label_column": "prediction",
+  "probability_column": "score_pathogenic"
+}

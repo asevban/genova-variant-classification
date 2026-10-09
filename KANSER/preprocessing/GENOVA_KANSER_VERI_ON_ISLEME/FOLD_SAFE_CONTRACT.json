@@ -1,0 +1,24 @@
+{
+  "contract_version": "1.0",
+  "positive_label": 1,
+  "immutable_split_bank": "data/splits/kanser",
+  "fit_on_training_only": [
+    "constant_column_detection",
+    "exact_duplicate_column_detection",
+    "high_missing_column_detection",
+    "imputation",
+    "categorical_encoding",
+    "scaling",
+    "feature_selection",
+    "resampling",
+    "calibration",
+    "threshold_selection"
+  ],
+  "never_use_for_tuning": [
+    "outer_validation_labels",
+    "test_labels",
+    "final_labels"
+  ],
+  "group_rule": "Aynı duplicate_group_id içindeki satırlar aynı fold tarafında kalır.",
+  "static_csv_note": "Hazır CSV'ler inceleme referansıdır; resmi CV'de preprocessing policy training fold'unda yeniden fit edilir."
+}

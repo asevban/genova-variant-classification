@@ -1,0 +1,15 @@
+{
+  "competition_level": "UNIVERSITE_VE_UZERI",
+  "allowed_panels": ["MASTER", "KANSER", "PAH", "CFTR"],
+  "id_aliases": ["id", "ID", "Variant_ID", "variant_id"],
+  "panel_aliases": {
+    "MASTER": ["MASTER", "master"],
+    "KANSER": ["KANSER", "kanser", "CANCER", "cancer"],
+    "PAH": ["PAH", "pah"],
+    "CFTR": ["CFTR", "cftr"]
+  },
+  "official_json_prediction_fields": ["id", "panel", "predicted_class", "predicted_prob"],
+  "output_filename_template": "TEAM_{team_id}_FINAL.json",
+  "offline_required": true,
+  "copy_test_data_to_usb_package": false
+}

@@ -1,0 +1,18 @@
+{
+  "CFTR": {
+    "panel": "CFTR",
+    "python_version": "3.12",
+    "runtime_dir": "final",
+    "entrypoint": "final/predict.py",
+    "model_path": "final/models/artifacts",
+    "preprocessing_path": "final/models/artifacts/preprocessing.json",
+    "feature_list_path": "final/models/artifacts/preprocessing.json:raw_required_features",
+    "calibration_path": null,
+    "threshold": 0.7224,
+    "inference_module": "src.inference_cftr",
+    "output_label_column": "Label",
+    "output_probability_column": "probability",
+    "probability_source": "audit_csv",
+    "final_probability_note": "Equal soft-voting mean of ID3, CatBoost and RandomForest repeat probabilities."
+  }
+}

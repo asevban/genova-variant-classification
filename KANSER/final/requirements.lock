@@ -1,0 +1,30 @@
+# Python==3.11.3 (dogrulanmis: bu ortamda KANSER_FINAL_BENIGN_SHIFT_MODEL.joblib basariyla
+# yuklendi, 2026-09-04). RUNTIME_VERSIONS.txt'teki Python==3.12.7 hedefinden farkli ama
+# ayni pinlerle (sklearn==1.5.1 vb.) calisiyor. Mevcut ortamdaki sklearn==1.3.2 ile
+# AttributeError: _RemainderColsList hatasi verip YUKLENEMIYORDU -- bu kilit dosya o riski
+# kapatmak icin uretildi (pip freeze).
+catboost==1.2.10
+contourpy==1.3.3
+cycler==0.12.1
+fonttools==4.64.0
+graphviz==0.21
+imbalanced-learn==0.12.3
+joblib==1.4.2
+kiwisolver==1.5.1
+lightgbm==4.7.0
+matplotlib==3.11.1
+narwhals==2.25.0
+numpy==1.26.4
+packaging==26.3
+pandas==2.2.2
+pillow==12.3.0
+plotly==7.0.0
+pyparsing==3.3.2
+python-dateutil==2.9.0.post0
+pytz==2026.3.post1
+scikit-learn==1.5.1
+scipy==1.17.1
+six==1.17.0
+threadpoolctl==3.6.0
+tzdata==2026.3
+xgboost==3.0.2

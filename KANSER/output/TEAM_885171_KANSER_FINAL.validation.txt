@@ -1,0 +1,16 @@
+==========================
+FINAL SUBMISSION VALIDATION
+==========================
+Rows expected: 542
+Rows produced: 542
+
+Duplicate IDs: 0
+Missing IDs: 0
+Extra IDs: 0
+Invalid panels: 0
+Invalid classes: 0
+Invalid probabilities: 0
+NaN/Inf: 0
+Class/threshold mismatches: 0
+
+STATUS: PASS

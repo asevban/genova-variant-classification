@@ -1,0 +1,17 @@
+{
+  "KANSER": {
+    "panel": "KANSER",
+    "python_version": "3.11",
+    "runtime_dir": "final",
+    "entrypoint": "final/predict.py",
+    "model_path": "final/models/KANSER_FINAL_BENIGN_SHIFT_MODEL.joblib",
+    "preprocessing_path": "bundled_in_model_artifact",
+    "feature_list_path": null,
+    "calibration_path": "bundled_in_model_artifact",
+    "threshold": 0.48646558033079473,
+    "inference_module": "src.inference_kanser",
+    "output_label_column": "prediction",
+    "output_probability_column": "pathogenic_score",
+    "final_probability_note": "DeployableBenignShiftModel.predict_score output."
+  }
+}

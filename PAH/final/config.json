@@ -1,0 +1,10 @@
+{
+  "panel": "PAH",
+  "python_version": "3.8.10",
+  "entrypoint": "final/predict.py",
+  "model": "final/models/final_model_bundle_v2.pkl",
+  "test_dir": "test",
+  "output_dir": "output",
+  "label_column": "predicted_label",
+  "probability_column": "predicted_probability"
+}

@@ -1,0 +1,7 @@
+{
+  "class_0": "BENIGN",
+  "class_1": "PATHOGENIC",
+  "predicted_prob_represents": "PATHOGENIC probability / final pathogenic score",
+  "status": "CONFIRMED",
+  "confirmation_source": "Repository final inference scripts use thresholded pathogenic scores: PAH predicted_probability, KANSER pathogenic_score, MASTER score_pathogenic, CFTR audit probability."
+}

@@ -1,0 +1,22 @@
+# TÜSEP test data and other local tabular data must stay out of the public repo.
+*.csv
+*.CSV
+*.zip
+*.log
+*_log.txt
+**/output/*.json
+**/output/**/*.json
+**/results/**/*.json
+**/reports/**/*.json
+**/data/processed/**/*.json
+GENOVA_JSON_MERGER/input/*.json
+**/.venv/
+**/__pycache__/
+**/archive/
+**/input/*.xlsx
+**/input/*.xls
+**/input/*.parquet
+**/input/*.tsv
+**/input/*.txt
+**/data/raw/
+**/data/processed/
