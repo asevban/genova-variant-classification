@@ -1,6 +1,8 @@
 # GENOVA
 
-**Dört bağımsız panel, tek doğrulanmış teslim akışı.** GENOVA; CFTR, KANSER, MASTER ve PAH varyantlarını ayrı model hatlarında değerlendiren bir yarışma projesidir. Her panel kendi tahminini üretir; `GENOVA_JSON_MERGER` bu çıktıları tek teslim biçiminde birleştirir.
+**TEKNOFEST 2026 finalisti · Genel sıralama: 15.** GENOVA, takımımızın genetik varyantların patojenitesini tahmin etmek amacıyla geliştirdiği yapay zekâ projesidir. 1.500 takımın yer aldığı yarışmada finale yükselen 34 takımdan biri olduk ve final etabını genel sıralamada 15. sırada tamamladık.
+
+Projede CFTR, KANSER, MASTER ve PAH panellerini bağımsız model hatlarında ele aldık. Her panel kendi tahminini üretirken `GENOVA_JSON_MERGER` bu çıktıları doğrulayıp tek bir teslim dosyasında birleştirir. Bu repo geliştirdiğimiz kodu, yöntem kararlarını ve analizleri bir araya getirir.
 
 ```mermaid
 flowchart LR
