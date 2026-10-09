@@ -1,6 +1,6 @@
 # Veri kullanılabilirliği
 
-CFTR, KANSER, MASTER ve PAH panellerinin test CSV dosyaları TÜSEP tarafından sağlanmıştır ve bu public repoda paylaşılmaz. Repo hiçbir panelin ham test tablosunu içermez.
+CFTR, KANSER, MASTER ve PAH panellerinin test CSV dosyaları TÜSEB tarafından sağlanmıştır ve bu public repoda paylaşılmaz. Repo hiçbir panelin ham test tablosunu içermez.
 
 Public kopyada kaynak kod, yöntem açıklamaları, analiz metinleri ve grafikler bulunabilir. Test verisi üzerinden üretilmiş panel sonuç/tahmin JSON'ları ve birleşik teslim JSON'u da paylaşılmaz.
 

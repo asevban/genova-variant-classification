@@ -26,7 +26,7 @@ flowchart LR
 
 ## Veri ve yeniden üretim
 
-**TÜSEP tarafından sağlanan test veri setleri bu repoda bulunmaz.** Dört panelin `input/<PANEL>.csv` dosyaları, diğer CSV'ler ve sonuç/tahmin JSON'ları public kopyadan çıkarılmıştır. Analiz metinleri ve grafikler inceleme amacıyla tutulmuştur. [Veri kullanılabilirliği](DATA_AVAILABILITY.md) dosyası kapsamı açıklar.
+**TÜSEB tarafından sağlanan test veri setleri bu repoda bulunmaz.** Dört panelin `input/<PANEL>.csv` dosyaları, diğer CSV'ler ve sonuç/tahmin JSON'ları public kopyadan çıkarılmıştır. Analiz metinleri ve grafikler inceleme amacıyla tutulmuştur. [Veri kullanılabilirliği](DATA_AVAILABILITY.md) dosyası kapsamı açıklar.
 
 Panel betikleri kendi klasörlerinde `.venv` bekler. Sanal ortamlar da repoya eklenmemiştir. Her panelin beklediği Python sürümü ilgili panel README'sinde, bağımlılıkları `final/requirements.lock` dosyasında yer alır. Yetkili kullanıcı kendi girdisini sağladıktan sonra panel klasöründeki `RUN_PANEL.ps1` veya `RUN_PANEL.bat` dosyasını çalıştırabilir. Girdi olmadan final tahminleri yeniden üretilemez.
 

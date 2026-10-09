@@ -1,4 +1,4 @@
-# TÜSEP test data and other local tabular data must stay out of the public repo.
+# TÜSEB test data and other local tabular data must stay out of the public repo.
 *.csv
 *.CSV
 *.zip

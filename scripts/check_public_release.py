@@ -1,4 +1,4 @@
-"""Fail if a public GENOVA checkout contains TÜSEP test CSV files or CSV data."""
+"""Fail if a public GENOVA checkout contains TÜSEB test CSV files or CSV data."""
 
 from pathlib import Path
 import subprocess
